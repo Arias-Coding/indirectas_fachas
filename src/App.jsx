@@ -25,13 +25,13 @@ export default function App() {
   return (
     <div className="bg-slate-500 h-screen w-screen flex justify-center items-center flex-col">
       <div className="bg-black flex justify-center items-center">
-        <div className="flex gap-2 pl-6 py-44">
+        <div className="flex gap-2 pl-6 py-40 sm:py-44">
           <img
             src="https://i.ibb.co/k9CzR8D/img.png"
             // src="https://i.ibb.co/4pFMfFD/img.jpg"
             class="h-24 w-24 rounded-full object-cover"
           />
-          <div className="pt-2 w-72 mr-8">
+          <div className="pt-2 mr-12 w-64 sm:w-72">
             <div className="flex items-end gap-1.5">
               <p className="text-white text-lg italic">:)</p>
               <p className="text-gray-400 text-base">@indirectas_fachas</p>
@@ -42,8 +42,9 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className="flex gap-4 text-white">
+      <div className="flex gap-4 text-white pt-6">
         <button
+          className="bg-slate-800 py-2 px-4"
           onClick={() => {
             setSelecPhrase(SelecPhrase - 1);
           }}
@@ -51,6 +52,7 @@ export default function App() {
           -
         </button>
         <button
+          className="bg-slate-800 py-2 px-4"
           onClick={() => {
             setSelecPhrase(SelecPhrase + 1);
           }}
